@@ -12,7 +12,7 @@ class Triangle
   end
   
   def kind 
-    if self.valid_triangle?
+    if valid_triangle?
       raise TriangleError
     elsif @a == @b && @b == @c  
       :equilateral 
