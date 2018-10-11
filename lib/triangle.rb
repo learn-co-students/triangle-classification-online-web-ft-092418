@@ -1,3 +1,12 @@
+require 'rspec'
 class Triangle
-  # write code here
+  attr_accessor :lengthab, :lengthbc, :lengthca
+
+  def kind 
+
+  end 
+
+  class TriangleError < StandardError
+
+  end 
 end
