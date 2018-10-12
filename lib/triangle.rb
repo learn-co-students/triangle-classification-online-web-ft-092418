@@ -18,14 +18,17 @@ class Triangle
       begin
         raise TriangleError
       end 
-    elsif @a == @b && @b == @c
+    end 
+    if @a == @b && @b == @c
       :equilateral
-    elsif @a == @b || @a == @c || @b == @c
+    end 
+    if @a == @b || @a == @c || @b == @c
       :isosceles 
-    #elsif @a != @b && @b != @c 
-      #:scalene
-    else 
+    end 
+    if @a != @b && @b != @c 
       :scalene
+    #else 
+      #:scalene
     end     
   end 
 
